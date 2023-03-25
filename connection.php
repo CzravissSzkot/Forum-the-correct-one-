@@ -1,6 +1,6 @@
 <?php 
     $servername = "localhost";
-    $username = "root";
+    $username  = "root";
     $password = "Polska2234";
     $db_name = "forum login";  
     $conn = new mysqli($servername, $username, $password, $db_name, 3306);

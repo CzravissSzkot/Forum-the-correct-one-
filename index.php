@@ -19,9 +19,9 @@
         <div class="box1">
             <h1>Nights Forum</h1>
             <form name = "form" method="POST" class="bbc" action="login.php">
-                <input type="text" id="user" name="user" placeholder="Enter Username"><br>
-                <input type = "password" name = "pass" id="pw" placeholder="Enter Password"><br>
-                <input type="submit" id="btn" value="Login" name = "submit"/>
+                <input type="text" id="user" name="user" placeholder="Enter Username" required><br>
+                <input type = "password" name = "pass" id="pw" placeholder="Enter Password" required><br>
+                <input type="submit" id="btn" value="Login" name = "submit">
             </form>
         </div>
     </section>
