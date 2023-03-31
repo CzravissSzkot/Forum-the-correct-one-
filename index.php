@@ -7,29 +7,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Night's Forum</title>
+    <title>Night's Gallery</title>
     <link rel="stylesheet" href="style1.css"/>
-    <meta http-equiv="Cache-control" content="no-cache">
 </head>
 <body>
     <section class="header">
-        <h1>This website is a private forum, if you want to join ask me on discord Nightstalker#4397 or <a href="reg.php">Register</a></h1>
+        <h1 class="">This site contains <a class = "a">R-18</a> please be caucius visiting our site</h1>
     </section>
     <section class = "content">
         <div class="box1">
-            <h1>Nights Forum</h1>
+            <h1>Login Panel</h1>
             <form name = "form" method="POST" class="bbc" action="login.php">
-                <input type="text" id="user" name="user" placeholder="Enter Username" required><br>
-                <input type = "password" name = "pass" id="pw" placeholder="Enter Password" required><br>
-                <input type="submit" id="btn" value="Login" name = "submit">
+                <label>Login</label><br>
+                <input type="text" id="user" name="user" placeholder="username"><br>
+                <label>Password</label><br>
+                <input type = "password" name = "pass" id="pw" placeholder="Password"><br>
+                <input type="submit" id="btn" value="Login" name = "submit"/>
             </form>
         </div>
     </section>
-    <section class="footer">
-        <div>
-            <p>Author of this forum does not take any responsibility of what is happening on forum unless its highly illegal</p>
-            <p>for list of rules click <a href = "rule.pdf">here</a></p>
+    <div class="box">
+            <a href="reg.php">Click here to register</a>
         </div>
-    </section>
+    <script>
+            function isvalid(){
+                var user = document.form.user.value;
+                var pass = document.form.pass.value;
+                if(user.length=="" && pass.length==""){
+                    alert(" Username and password field is empty");
+                    return false;
+                }
+                else if(user.length==""){
+                    alert(" Username field is empty");
+                    return false;
+                }
+                else if(pass.length==""){
+                    alert(" Password field is empty");
+                    return false;
+                }
+                
+            }
+        </script>
 </body>
 </html>

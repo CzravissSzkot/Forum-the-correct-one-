@@ -13,19 +13,25 @@ $db->select_db("$db_name");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register :3</title>
     <link rel="stylesheet" href="reg.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
-    <div class="register">
+    <section class="register">
+    <div class="text">  
+                <h1>Please Register</h1>
+                <p>Create your free account and enjoy Nights form :3</p>
+        </div>
+        <div class ="form">
         <h1>
-            Register
-        </h1>
-        <form action="reg.php" method="POST">
-            <input type="text" name="username" placeholder="insert your username" id="username" required>
-            <input type="password" name="password" placeholder="insert your password" id="password" required>
-            <input type="email" name="email" placeholder="insert your email" id="email" required>
+        <form action="reg.php" method="POST" name="form">
+            <input type="text" name="username" placeholder="insert your username" id="username" required><br>
+            <input type="password" name="password" placeholder="insert your password" id="password" required><br>
+            <input type="email" name="email" placeholder="insert your email" id="email" required><br>
 <!--            <input type="text" name="invite" placeholder="insert your invite" id="invite" re>quired> -->
             <input type="submit" name="register" value = "register" id="button">
         </form>
+        </h1>
+        </div>
         <?php
   if(isset($_POST['register']))
   {
@@ -34,7 +40,7 @@ $db->select_db("$db_name");
    $email=$_POST['email'];
    $password=$_POST['password'];
     //quary
-    if($stmt = $conn->prepare('SELECT `usr` FROM `login` WHERE usr = ?')){
+    if($stmt = $conn->prepare('SELECT `username` FROM `login` WHERE username = ?')){
         $stmt->bind_param('s',$_POST['username']);
         $stmt->execute();
         $stmt->store_result();
@@ -44,7 +50,7 @@ $db->select_db("$db_name");
         }
     else{
    
-    if ($db->query("INSERT INTO `login` (`usr`, `pw`, `email`) VALUES ('$username', '$password', '$email');"))
+    if ($db->query("INSERT INTO `login` (`username`, `password`, `email`) VALUES ('$username', '$password', '$email');"))
     print "<script>window.location.href = 'acccreated.html';</script>";
 	
 	else {
@@ -52,6 +58,6 @@ $db->select_db("$db_name");
 	}
   }}}
  ?>
-    </div>
+    </section>
 </body>
 </html>
