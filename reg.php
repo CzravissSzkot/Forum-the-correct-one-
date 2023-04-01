@@ -19,17 +19,22 @@ $db->select_db("$db_name");
     <section class="register">
     <div class="text">  
                 <h1>Please Register</h1>
-                <p>Create your free account and enjoy Nights form :3</p>
+                <p>Create your free account and enjoy Nights gallery :3</p>
+                <img src="img/12.png"/>
         </div>
         <div class ="form">
         <h1>
-        <form action="reg.php" method="POST" name="form">
-            <input type="text" name="username" placeholder="insert your username" id="username" required><br>
-            <input type="password" name="password" placeholder="insert your password" id="password" required><br>
-            <input type="email" name="email" placeholder="insert your email" id="email" required><br>
+            <h1 class="a">Enter your credentials</h1>
+            <form action="reg.php" method="POST" name="form">
+                <input type="text" name="username" placeholder="Insert your username" id="username" required><br>
+                <input type="password" name="password" placeholder="Insert your password" id="password" required><br>
+                <input type="email" name="email" placeholder="Insert your email" id="email" required><br>
 <!--            <input type="text" name="invite" placeholder="insert your invite" id="invite" re>quired> -->
-            <input type="submit" name="register" value = "register" id="button">
-        </form>
+                <input type="submit" name="register" value = "register" id="button">
+            </form>
+            <div class="nigger">
+            <a class="back" href="index.php">Login</a>
+            </div>
         </h1>
         </div>
         <?php
