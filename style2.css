@@ -19,71 +19,71 @@ body, html{
     animation: fadea 0.5s ease;
     background-image: url("img/1.jpg");
     background-size: cover;
-}  
-.right{
-    width: 50%;
-    animation: aaa 1s ease;
-    
+    overflow: hidden;
 }
-.left{
-    margin-left: 50%;
-    width: 50%;
-    animation: fadeIn 1s ease;
-}
-.nsfw a{
-    padding: 60px 120px;
-    background-color: rgba(137, 43, 226, 0.404);
-    text-align: center;
-    font-size: 40px;
-    text-decoration: none;
-    color: aliceblue;
-    transition: 0.5s;
-    backdrop-filter: blur(20px);
-    border: 1px solid rgb(38, 23, 102);
-    border-radius: 25px;
-}
-.sfw a{
-    padding: 60px 120px;
-    background-color: rgba(137, 43, 226, 0.404);
-    text-align: center;
-    font-size: 40px;
-    text-decoration: none;
-    color: aliceblue;
-    transition: 0.5s;
-    backdrop-filter: blur(20px);
-    border: 1px solid rgb(38, 23, 102);
-    border-radius: 25px;
-}
-.sfw{
-    margin-top: 16%;
-    position: absolute;
-    margin-left: 20%;
+.sekcja{
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    margin-top: 15%;
 }
 .nsfw{
-    margin-top: 16%;
-    position: absolute;
-    margin-left: 10%;
-}
-.sfw a:hover{
-    padding-top: 500px ;
-    padding-bottom: 1000px;
-    background-color: rgba(137, 43, 226, 0.404);
-    text-align: center;
-    font-size: 40px;
     text-decoration: none;
-    color: aliceblue;
-    transition: 0.5s;
-}
-.nsfw a:hover{
-    padding-top: 500px ;
-    padding-bottom: 1000px;
-    background-color: rgba(137, 43, 226, 0.404);
-    text-align: center;
-    font-size: 40px;
+    color: white;
     text-decoration: none;
-    color: aliceblue;
-    transition: 0.5s;
+    color: white;
+    padding: 45px 70px;
+    background-color: rgba(122, 67, 129, 0.5);
+    font-size: 40px;
+    float: left;
+    border-radius:15px ;
+    border: 2px solid rgba(0, 0, 0, 0.377);
+    height: 1%;
+    transition: 0.3s;
 }
-.s{
-    height: 173px;
+.sfw{
+    text-align: center;
+    float:right;
+    text-decoration: none;
+    color: white;
+    padding: 45px 80px;
+    background-color: rgba(74, 69, 155, 0.562);
+    font-size: 40px;
+    border-radius:15px;
+    border: 2px solid rgba(0, 0, 0, 0.377);
+    height: 1%;
+    transition: 0.3s;
+}
+.nsfw:hover{
+    transition: 0.3s;
+    padding-top: 100%;
+    padding-bottom: 100%;
+    margin-top: -93%;
+    background-color: rgba(115, 233, 233, 0.671);
+}
+
+.sfw:hover{
+    transition: 0.3s;
+    padding-top: 100%;
+    padding-bottom: 100%;
+    margin-top: -93%;
+    background-color: rgba(115, 233, 233, 0.671);
+}
+.nigger{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    margin: 0px;
+}
+.nigger2{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    margin-top: 60px;
+}
+.container{text-align: center;
 }

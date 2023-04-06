@@ -1,39 +1,99 @@
+@keyframes fadeIn{
+    0% {opacity: 0};
+    100% {opacity: 100};
+}
+@keyframes aaa {
+    0% {opacity: 0;}
+    80% {opacity: 0;}
+    100% {opacity: 100;}
+}
+@keyframes blurin {
+    0% {filter: blur(20px);}
+    100% {filter: blur(1px) ;}
+}
 *{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-    background-color: black;
-}
-.images img{
-    background-image: url(img/1.jpg);
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    transition: 0.5s;
-    object-fit: cover;
-    max-width: 24%;
-    box-sizing: border-box;
-    overflow-y: scroll;
-    margin-right: 10px;
-    min-width: 24%;
+    animation: blurin 0.5s ease;
 }
 body{
     overflow: scroll;
+    background: linear-gradient(218deg, rgba(2,0,36,1) 0%, rgb(11, 9, 121) 45%,rgb(46, 24, 128) 55%,rgb(47, 28, 68) 65%, rgb(23, 13, 82) 100%);
+    background-size: cover;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
 }
-.images {
+img{
+    max-width: 1000px;
+    max-height: 1000px;
+    min-width: 700px;
+    margin-left: auto;
+    margin-left: auto;
     margin-top: 100px;
-}
-.home a{
-    padding: 20px 30px;
-    background-color: rgba(145, 75, 151, 0.493);
-    text-align: center;
-    border: 1px solid blueviolet;
-    border-radius: 25px;
-    text-decoration: none;
+    padding: 10px 10px 0px 10px;
+    background-color: rgb(49, 38, 112);
+    margin-bottom: 0px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: -5px;
+    transition: 1s ease-out;
 }
 .home{
-    margin-top: 30px;
+    position: fixed;
+    width: 100%;
     text-align: center;
+    z-index:99;
 }
-.home a:visited{
-    color: inherit;
+.home1{
+    text-align: center;
+    background-color: rgb(76, 61, 160);
+    padding: 20px 40px;
+    position: sticky;
+    border-radius: 0px 0px 15px 15px;
+    top: 0px;
+    color: white;
+    text-decoration: dashed;
+    transition: 0.5s;
+    border: 1px solid white;
 }
-
+.home1:hover{
+    background-color: rgb(129, 155, 204);
+    transition: 0.5s;
+}
+.row{
+    width: 1500px;
+    height: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content h1{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+.image1 h1{
+    width: inherit;
+    color: white;
+    background-color: rgba(101, 72, 179, 0.616);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px;
+    position: relative;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+}
+.image1{
+    width: inherit;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+img:hover{
+    transition: 0.5s;
+    min-width: 1200px;
+}

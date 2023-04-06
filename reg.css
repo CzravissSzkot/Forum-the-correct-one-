@@ -133,5 +133,10 @@ body, html{
     border: 1px solid black;
 }
 .nigger{
-    margin-top: 140px;
+    margin-top: 40px;
+}
+.anigger{
+    padding-top: 10px;
+    font-size: 20px;
+    color: white;
 }

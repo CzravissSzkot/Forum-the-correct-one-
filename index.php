@@ -29,6 +29,9 @@
     <div class="box">
             <a href="reg.php">Click here to register</a>
         </div>
+        <div class="anigger">
+            <p>Forgot passowrd ? Contact me on discord <br>Nightstalker#4397</p>
+        </div>
     <script>
             function isvalid(){
                 var user = document.form.user.value;
